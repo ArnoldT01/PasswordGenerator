@@ -1,0 +1,199 @@
+@font-face {
+    font-family: TTOctosquares;
+    src: url(../fonts/TT-Octosquares-Trial-Condensed-Regular.ttf);
+}
+
+body {
+    font-family: TTOctosquares;
+    background-color: black;
+    color: white;
+}
+
+header { margin-left: 10vw; }
+
+#appTitle { color: #F8EF00; }
+
+.container {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    margin: 50px auto;
+    padding: 20px 60px;
+    border: 1px solid cadetblue;
+}
+
+#generatedPasswordBox {
+    border-top: 1px solid aqua;
+    border-right: none;
+    border-bottom: 1px solid aqua;
+    border-left: 1px solid aqua;
+    background-color: #001819;
+    color: aqua;
+    padding-top: 15px;
+    padding-left: 10px;
+    resize: none;
+    margin-right: 0;
+    padding-right: 0;
+    overflow: hidden;
+}
+
+#refreshButton {
+    height: 58px;
+    width: 50px;
+    background-color: transparent;
+    color: white;
+    border-top: 1px solid aqua;
+    border-right: 1px solid aqua;
+    border-bottom: 1px solid aqua;
+    border-left: none;
+    font-size: 35px;
+    font-weight: 200;
+    background-color: #001819;
+    margin-left: 0;
+    padding-left: 0;
+    position: relative;
+    top: -16px;
+    left: -5px;
+    color: aqua;
+}
+
+#notification {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+.copyPassword {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+    height: 40px;
+    border-radius: 0 0 0 10px;
+    background-color: #F8EF00;
+    color: black;
+    box-shadow: 2px 0 0 #F8481C;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.copyPassword p {
+    letter-spacing: 2px;
+    font-size: 11px;
+    font-weight: 900;
+}
+
+#rangeInput {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 360px;
+    height: 1px;
+    background-color: aqua;
+    border-radius: 5px;
+    outline: none;
+}
+
+#rangeInput::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 13px;
+    height: 13px;
+    background-color: #F8EF00;
+    border-radius: 0;
+    border: none;
+}
+
+#rangeInput::-moz-range-thumb {
+    width: 13px;
+    height: 13px;
+    background-color: #F8EF00;
+    border: none;
+    border-radius: 0;
+}
+
+#rangeValue {
+    position: relative;
+    top: -36px;
+    text-align: center;
+    width: 12px;
+    color: white;
+    font-size: 12px;
+}
+
+.options {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+
+.optionsGroup1,
+.optionsGroup2 {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.upprCaseContainer,
+.lowerCaseContainer {
+    margin-bottom: 10px;
+}
+
+.upprCaseContainer,
+.lowerCaseContainer,
+.numberContainer,
+.symbolsContainer {
+    display: flex;
+    align-items: center;
+}
+
+.options input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #F8EF00;
+    background-color: transparent; 
+    outline: none;
+    margin-right: 10px;
+}
+
+.options input[type="checkbox"]:checked { background-color: #F8EF00; }
+
+.grid-item2 { margin-right: 8vw; }
+
+.grid-item2 h5 {
+    font-size: 16px;
+    letter-spacing: 1.9px;
+    margin-top: 15vh;
+}
+
+.passwordDetailsContainer {
+    color: grey;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+footer {
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+.copyright,
+.socialIcons a { color: #FFFFFF; }

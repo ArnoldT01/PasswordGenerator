@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/Favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Arnold Password Generator Online Free</title>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="image-logo"><img class="logo-image" src="images/main-logo-white-transparent.png" alt="logo"></a>
+    </header>
+
+    <div class="container">
+
+        <div class="grid-item1">
+            <h1 id="appTitle">Password<br>Generator</h1>
+            <textarea id="generatedPasswordBox" cols="44" rows="2" disabled></textarea>
+            <button id="refreshButton">&#8634;</button>
+            <div class="notification" id="notification">Password Copied Successfully!</div>
+            <div class="copyPassword" onclick="copyPassword()"><p>COPY PASSWORD_ &nbsp; &nbsp; &nbsp; &nbsp; &rarr;</p></div>
+            <input type="range" id="rangeInput" min="0" max="100" value="15">
+            <div id="rangeValue"></div>
+            <div class="options">
+                <div class="optionsGroup1">
+                    <div class="upprCaseContainer">
+                        <input type="checkbox" id="upprCase" checked>
+                        <label for="upprCase">Uppercase letters</label>
+                    </div>
+                    <div class="numberContainer">
+                        <input type="checkbox" id="numbers">
+                        <label for="numbers">Numbers</label>
+                    </div>
+                </div>
+                <div class="optionsGroup2">
+                    <div class="lowerCaseContainer">
+                        <input type="checkbox" id="lowerCase">
+                        <label for="lowerCase">Lowercase letters</label>
+                    </div>
+                    <div class="symbolsContainer">
+                        <input type="checkbox" id="symbols">
+                        <label for="symbols">Symbols</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-item2">
+            <h5>PASSWORD HISTORY</h5>
+            <div class="passwordDetailsContainer" id="passwordHistory"></div>
+        </div>
+
+    </div>
+    
+    <footer>
+        <p class="copyright">&copy; <span id="copyright-year">2024</span> Arnold.</p>
+        <div class="socialIcons">
+            <a href="https://www.linkedin.com/in/arnold-mavhunga-441880324/" class="fa fa-linkedin" target="_blank"></a>
+            <a href="https://github.com/ArnoldT01" class="fa fa-github" target="_blank"></a>
+        </div>
+    </footer>
+
+</body>
+<script src="js/script.js"></script>
+</html>

@@ -1,0 +1,44 @@
+@font-face {
+    font-family: titilium;
+    src: url(../fonts/TitilliumWeb-Regular.ttf);
+}
+
+* { font-family: titilium, sans-serif; }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    height: 4vh;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    margin-top: 20px;
+    border-top: 1px solid rgb(136,136,136);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.copyright {
+    color: 	rgb(136,136,136);
+    font-size: 0.75em;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+@media ( min-width: 540px ) {
+    footer { flex-direction: row; }
+}
