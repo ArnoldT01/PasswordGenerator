@@ -17,6 +17,10 @@ function showNotification() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+    const currentYear = new Date().getFullYear();
+    const copyrightYearElement = document.getElementById('copyright-year');
+    copyrightYearElement.textContent = currentYear;
+    
     const rangeInput = document.getElementById('rangeInput');
     const rangeValue = document.getElementById('rangeValue');
 
